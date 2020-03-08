@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <MapView v-bind="mapConfig"></MapView>
+    <MapView v-bind="mapConfig" @completed="mapLoad"></MapView>
     <div class="left">
       <MapView v-for="(map,i) in mapList" :key="i"
                v-bind="map"
+               @completed="mapLoad"
                :height="260"></MapView>
     </div>
   </div>
 </template>
 
 <script>
+
   export default {
     name: "App",
     data() {
-      let domainUrl='https://map.xianjiaojing.com';
+      let domainUrl = 'https://map.xianjiaojing.com';
       return {
         mapList: [{
           accessToken: 'e919a6f32ce242f5aec22652d9dc1fdb',
@@ -38,24 +40,30 @@
             maxZoom: 17
           }
         }],
-        mapConfig:{
+        mapConfig: {
           accessToken: '18f589098bf14f5bac790331c60a37ae',
           solution: '3492',
           options: {
             container: 'map',
-            style: domainUrl+'/service/solu/style/id/3492',
+            style: domainUrl + '/service/solu/style/id/3492',
             center: [116.1866179, 39.992559],
             zoom: 9,
             minZoom: 3,
             maxZoom: 17,
-            logoControl:true
+            logoControl: true
           },
-          urls:{
-            domainUrl:domainUrl,
-            dataDomainUrl:domainUrl,
-            serviceUrl:domainUrl + '/service',
+          urls: {
+            domainUrl: domainUrl,
+            dataDomainUrl: domainUrl,
+            serviceUrl: domainUrl + '/service',
           }
         }
+      }
+    },
+    mounted() {
+    },
+    methods: {
+      mapLoad() {
       }
     }
   }

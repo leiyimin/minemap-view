@@ -1,7 +1,5 @@
-// packages / index.js
-
 // 导入单个组件
-import MapView from "./mapView/src/MapView";
+import MapView from "./components/mapView/MapView";
 
 // 以数组的结构保存组件，便于遍历
 const components = [

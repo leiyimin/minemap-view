@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .DS_Store
 node_modules/
-packages/
+components/
 public/
 vue.config.js
 babel.config.js
@@ -25,6 +25,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-/demo/
-/public/
-/dist/
+demo/
+dist/
