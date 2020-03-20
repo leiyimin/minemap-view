@@ -6,7 +6,8 @@
         v-for="(map, i) in mapList"
         :key="i"
         v-bind="map"
-        @completed="mapLoad"
+        @completed
+        ="mapLoad"
         :height="260"
       >
       </MapView>
