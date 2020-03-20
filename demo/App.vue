@@ -3,7 +3,6 @@
     <MapView v-bind="mapConfig" @completed="mapLoad"></MapView>
     <div class="left">
       <MapView v-for="(map,i) in mapList" :key="i" v-bind="map" @completed="mapLoad" :height="260"></MapView>
-
     </div>
   </div>
 </template>
@@ -19,8 +18,8 @@ export default {
           accessToken: 'e919a6f32ce242f5aec22652d9dc1fdb',
           solution: '4287',
           options: {
-            container: "map1",
-            style: "//minedata.cn/service/solu/style/id/4287",
+            container: 'map1',
+            style: '//minedata.cn/service/solu/style/id/4287',
             center: [116.1866179, 39.992559],
             zoom: 9,
             minZoom: 3,
@@ -31,8 +30,8 @@ export default {
           accessToken: 'e919a6f32ce242f5aec22652d9dc1fdb',
           solution: 7185,
           options: {
-            container: "map2",
-            style: "//minedata.cn/service/solu/style/id/7185",
+            container: 'map2',
+            style: '//minedata.cn/service/solu/style/id/7185',
             center: [116.1866179, 39.992559],
             zoom: 9,
             minZoom: 3,
