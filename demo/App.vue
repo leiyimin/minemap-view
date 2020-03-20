@@ -8,7 +8,8 @@
         v-bind="map"
         @completed="mapLoad"
         :height="260"
-      ></MapView>
+      >
+      </MapView>
       <div><a href="/a.h"></a></div>
     </div>
   </div>
