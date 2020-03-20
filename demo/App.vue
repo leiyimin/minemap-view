@@ -2,14 +2,11 @@
   <div id="app">
     <MapView v-bind="mapConfig" @completed="mapLoad"></MapView>
     <div class="left">
-      <MapView
-        v-for="(map, i) in mapList"
-        :key="i"
-        v-bind="map"
-        @completed="mapLoad"
-        :height="260"
-      ></MapView>
-      <div><a href="/"></a></div>
+      <MapView v-for="(map, i) in mapList" :key="i" v-bind="map" @completed="mapLoad" :height="260"></MapView>
+
+      <div>
+        <a href="/"></a>
+      </div>
     </div>
   </div>
 </template>
