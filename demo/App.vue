@@ -9,6 +9,7 @@
         @completed="mapLoad"
         :height="260"
       ></MapView>
+      <div><a href="/"></a></div>
     </div>
   </div>
 </template>
